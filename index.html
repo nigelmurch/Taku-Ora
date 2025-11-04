@@ -11,11 +11,12 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@300;700&display=swap" rel="stylesheet" />
   <style>body, html {height: 100%; margin: 0;}</style>
-  <!-- Styles -->
-  <link rel="stylesheet" href="style/style.css" />
+    <!-- Styles -->
+        <link rel="stylesheet" href="style/style.css" />
 </head>
 <body>
-  <!-- === Content Warning Modal === -->
+    <main>
+    <!-- === Content Warning Modal === -->
   <div id="contentWarningModal" class="modal">
     <div class="modal-content">
       <h2>Content Warning</h2>
@@ -44,12 +45,42 @@
     <div id="top"></div>
     
 <header>
-    <nav class="main-nav">
-      #aboutAbout</a>
-      <a hrefrsChapters</a>
-      #contactContact</a>
-    </nav>
-  </header>
+        <nav class="main-nav">
+            <a href="About.html">About</a>
+            <a href="#" id="chaptersToggle">Chapters</a>
+            <a href="Contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <!-- Chapters panel (hidden by default) -->
+    <div id="chaptersPanel" class="chapters-panel" aria-hidden="true">
+        <div class="chapters-panel__inner">
+            <button id="chaptersClose" class="chapters-close" aria-label="Close chapters">✕</button>
+            <h3>Chapters</h3>
+            <p class="chapters-note">Jump to any chapter — click to open.</p>
+            <ul class="chapters-list">
+                <!-- These links will be handled by JS and scroll to the corresponding .chapter-divider -->
+                <li><a href="#" data-chapter="1">Chapter 1 — Dawn of Consciousness</a></li>
+                <li><a href="#" data-chapter="2">Chapter 2 — The Unfolding</a></li>
+                <li><a href="#" data-chapter="3">Chapter 3 — Chalk Dust And Dreams</a></li>
+                <li><a href="#" data-chapter="4">Chapter 4 — Mountains of Ambition</a></li>
+                <li><a href="#" data-chapter="5">Chapter 5 — Forests of Wisdom</a></li>
+                <li><a href="#" data-chapter="6">Chapter 6 — Deserts of Solitude</a></li>
+                <li><a href="#" data-chapter="7">Chapter 7 — Oceans of Possibility</a></li>
+                <li><a href="#" data-chapter="8">Chapter 8 — The Devils Dance</a></li>
+                <li><a href="#" data-chapter="9">Chapter 9 — Nothing Is Time Proof</a></li>
+                <li><a href="#" data-chapter="10">Chapter 10 — Blades and Blood</a></li>
+                <li><a href="#" data-chapter="11">Chapter 11 — Cities of Connection</a></li>
+                <li><a href="#" data-chapter="12">Chapter 12 — Silence Between Storms</a></li>
+                <li><a href="#" data-chapter="13">Chapter 13 — Two Days, Two Tangi</a></li>
+                <li><a href="#" data-chapter="14">Chapter 14 — Ashes Of The Living</a></li>
+                <li><a href="#" data-chapter="15">Chapter 15 — The Physicians Verdict</a></li>
+                <li><a href="#" data-chapter="16">Chapter 16 — My Truck</a></li>
+                <li><a href="#" data-chapter="17">Chapter 17 — The Beast And Whats To Come</a></li>
+                <li><a href="#" data-chapter="18">Chapter 18 — Something Special</a></li>
+            </ul>
+        </div>
+    </div>
   
   
     <h1 class="hero__title">Taku Ora Haerenga</h1>
@@ -57,7 +88,7 @@
   </section>
 
 <!-- Chapter 1: My Freedom From Mothers Womb -->
-    <section>
+    <section id="chapter-1">
         <div class="content-section">
             <div class="text-content">
                 <span class="chapter-number">Chapter 1</span>
@@ -122,7 +153,7 @@
     </section>
 
     <!-- Chapter 2:The Unfolding -->
-    <section class="chapter-divider">
+    <section class="chapter-divider" id="chapter-2">
         <div class="chapter-title">
             <span class="chapter-number">Chapter 2</span>
             <h2>The Unfolding</h2>
@@ -187,7 +218,7 @@
     </section>
 
     <!-- Chapter 3: Chalk Dust ANd Dreams-->
-    <section class="chapter-divider">
+    <section class="chapter-divider" id="chapter-3">
         <div class="chapter-title">
             <span class="chapter-number">Chapter 3</span>
             <h2>Chalk Dust And Dreams </h2>
@@ -254,7 +285,7 @@
     </section>
 
     <!-- Chapter 4: Mountains of Ambition -->
-    <section class="chapter-divider">
+    <section class="chapter-divider" id="chapter-4">
         <div class="chapter-title">
             <span class="chapter-number">Chapter 4</span>
             <h2>The Unfolding</h2>
@@ -320,7 +351,7 @@
     </section>
 
     <!-- Chapter 5: Forests of Wisdom -->
-    <section class="chapter-divider">
+    <section class="chapter-divider" id="chapter-5">
         <div class="chapter-title">
             <span class="chapter-number">Chapter 5</span>
             <h2>Visitation Of The Dark Kind</h2>
@@ -393,7 +424,7 @@
     </section>
 
     <!-- Chapter 6: Deserts of Solitude -->
-    <section class="chapter-divider">
+    <section class="chapter-divider" id="chapter-6">
         <div class="chapter-title">
             <span class="chapter-number">Chapter 6</span>
             <h2>The Unfolding</h2>
@@ -488,12 +519,12 @@
     </section>
 
     <!-- Chapter 7: Oceans of Possibility -->
-    <section class="chapter-divider">
-        <div class="chapter-title">
-            <span class="chapter-number">Chapter 7</span>
-            <h2>A Sons Burden A Fathers Escape</h2>
-        </div>
-    </section>
+      <section class="chapter-divider" id="chapter-7">
+            <div class="chapter-title">
+                <span class="chapter-number">Chapter 7</span>
+                <h2>A Sons Burden A Fathers Escape</h2>
+            </div>
+        </section>
 
     <section>
         <div class="content-section">
@@ -578,12 +609,12 @@
     </section>
 
     <!-- Chapter 8: The Devils Dance -->
-    <section class="chapter-divider">
-        <div class="chapter-title">
-            <span class="chapter-number">Chapter 8</span>
-            <h2>Cities of Connection</h2>
-        </div>
-    </section>
+      <section class="chapter-divider" id="chapter-8">
+            <div class="chapter-title">
+                <span class="chapter-number">Chapter 8</span>
+                <h2>Cities of Connection</h2>
+            </div>
+        </section>
     <section>
         <div class="content-section reverse">
             <div class="text-content">
@@ -676,11 +707,11 @@
 
 
   <!-- Chapter 9: Deserts of Solitude -->
-  <section class="chapter-divider">
-    <div class="chapter-title">
-        <span class="chapter-number">Chapter 9</span>
-        <h2>Nothing Is Time Proof</h2>
-    </div>
+    <section class="chapter-divider" id="chapter-9">
+        <div class="chapter-title">
+                <span class="chapter-number">Chapter 9</span>
+                <h2>Nothing Is Time Proof</h2>
+        </div>
 </section>
 
 <section>
@@ -764,7 +795,7 @@
 </section>
 
 <!-- Chapter 10: Oceans of Possibility -->
-<section class="chapter-divider">
+<section class="chapter-divider" id="chapter-10">
     <div class="chapter-title">
         <span class="chapter-number">Chapter 10</span>
         <h2>Blades and Blood</h2>
@@ -876,7 +907,7 @@
 </section>
 
 <!-- Chapter 11: Cities of Connection -->
-<section class="chapter-divider">
+<section class="chapter-divider" id="chapter-11">
     <div class="chapter-title">
         <span class="chapter-number">Chapter 11</span>
         <h2>House Of Shadows</h2>
@@ -958,12 +989,12 @@
 </section>
 
 
-  <!-- Chapter 12: Silence Between Storms -->
-  <section class="chapter-divider">
-    <div class="chapter-title">
-        <span class="chapter-number">Chapter 12</span>
-        <h2>The Silence Between Storms</h2>
-    </div>
+    <!-- Chapter 12: Silence Between Storms -->
+    <section class="chapter-divider" id="chapter-12">
+        <div class="chapter-title">
+                <span class="chapter-number">Chapter 12</span>
+                <h2>The Silence Between Storms</h2>
+        </div>
 </section>
 
 <section>
@@ -1046,7 +1077,7 @@
 </section>
 
 <!-- Chapter 13: Oceans of Possibility -->
-<section class="chapter-divider">
+<section class="chapter-divider" id="chapter-13">
     <div class="chapter-title">
         <span class="chapter-number">Chapter 13</span>
         <h2>Two Days, Two Tangi</h2>
@@ -1115,7 +1146,7 @@
 </section>
 
 <!-- Chapter 14:Ashes Of The Living -->
-<section class="chapter-divider">
+<section class="chapter-divider" id="chapter-14">
     <div class="chapter-title">
         <span class="chapter-number">Chapter 14</span>
         <h2>Ashes Of The Living</h2>
@@ -1173,12 +1204,12 @@
 </section>
 
 
-  <!-- Chapter 15: Deserts of Solitude -->
-  <section class="chapter-divider">
-    <div class="chapter-title">
-        <span class="chapter-number">Chapter 15</span>
-        <h2>The Physicians Verdict</h2>
-    </div>
+    <!-- Chapter 15: Deserts of Solitude -->
+    <section class="chapter-divider" id="chapter-15">
+        <div class="chapter-title">
+                <span class="chapter-number">Chapter 15</span>
+                <h2>The Physicians Verdict</h2>
+        </div>
 </section>
 
 <section>
@@ -1246,7 +1277,7 @@
 </section>
 
 <!-- Chapter 16: My Truck -->
-<section class="chapter-divider">
+<section class="chapter-divider" id="chapter-16">
     <div class="chapter-title">
         <span class="chapter-number">Chapter 16</span>
         <h2>My Truck</h2>
@@ -1316,7 +1347,7 @@
 </section>
 
 <!-- Chapter 17: Cities of Connection -->
-<section class="chapter-divider">
+<section class="chapter-divider" id="chapter-17">
     <div class="chapter-title">
         <span class="chapter-number">Chapter 17</span>
         <h2>The Beast And Whats To Come</h2>
@@ -1411,12 +1442,12 @@
 
 
 
-  <!-- Chapter 18: Deserts of Solitude -->
-  <section class="chapter-divider">
-    <div class="chapter-title">
-        <span class="chapter-number">Chapter 18</span>
-        <h2>Something Special</h2>
-    </div>
+    <!-- Chapter 18: Deserts of Solitude -->
+    <section class="chapter-divider" id="chapter-18">
+        <div class="chapter-title">
+                <span class="chapter-number">Chapter 18</span>
+                <h2>Something Special</h2>
+        </div>
 </section>
 
 <section>
@@ -1551,27 +1582,27 @@
     </div>
   </section>
   
-  </main>
+    </main>
   
 <footer>
-    <div class="footer-content">
-      <p class="quote">“From the shadows, we rise. Every scar tells a story of survival.”</p>
-      <nav class="footer-nav">
-        #topHome</a>
-        <a hrefbout</a>
-        #chaptersChapters</a>
-        #contactContact</a>
-      </nav>
+        <div class="footer-content">
+            <p class="quote">“From the shadows, we rise. Every scar tells a story of survival.”</p>
+            <nav class="footer-nav">
+                <a href="#top">Home</a>
+                <a href="About.html">About</a>
+                <a href="#chapters">Chapters</a>
+                <a href="#contact">Contact</a>
+            </nav>
      
-      <p class="credits">&copy; 2025 Escape From Darkness. All Rights Reserved.</p>
-    </div>
-  </footer>
+            <p class="credits">&copy; 2025 Escape From Darkness. All Rights Reserved.</p>
+        </div>
+    </footer>
   
   
   <!-- Libraries and Scripts -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
-  <script src="script/script.js"></script>
-  <script src="script/particles.js"></script>
+            <script src="script/script.js"></script>
+        <script src="script/particles.js"></script>
   </body>
   </html>

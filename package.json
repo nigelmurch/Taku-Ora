@@ -1,0 +1,14 @@
+{
+  "name": "taku-ora",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "build:css": "cleancss -o style/style.min.css style/style.css",
+    "build:js": "terser script/script.js -c -m -o script/script.min.js && terser script/particles.js -c -m -o script/particles.min.js",
+    "build": "npm run build:css && npm run build:js"
+  },
+  "devDependencies": {
+    "clean-css-cli": "^5.3.0",
+    "terser": "^5.20.1"
+  }
+}

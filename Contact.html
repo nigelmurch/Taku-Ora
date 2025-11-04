@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Contact — Taku Ora Haerenga" />
+  <title>Contact — Taku Ora Haerenga</title>
+  <link rel="stylesheet" href="style/style.css" />
+</head>
+<body>
+  <main class="full-width-section">
+    <div class="full-width-content">
+      <h1>Contact</h1>
+      <p style="max-width:800px;margin:1.5rem auto;color:#ddd;line-height:1.8">Thanks for visiting. This is a static site. To contact the author, use the email link below or replace the form action with your server endpoint.</p>
+
+      <section style="max-width:900px;margin:2rem auto;background:rgba(11,11,11,0.9);padding:2rem;border-radius:8px;border:1px solid rgba(255,255,255,0.04)">
+        <h2>Send a message</h2>
+        <!-- Netlify form: replace or extend fields as needed. This will submit to Netlify Forms when deployed. -->
+        <form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+          <input type="hidden" name="form-name" value="contact" />
+          <p style="display:none"><label>Don’t fill this out if you're human: <input name="bot-field" /></label></p>
+
+          <label style="display:block;margin-top:0.8rem;color:#ddd">Name</label>
+          <input type="text" name="name" required style="width:100%;padding:0.6rem;border-radius:6px;border:1px solid rgba(255,255,255,0.06);background:#0b0b0b;color:#fff" />
+
+          <label style="display:block;margin-top:0.8rem;color:#ddd">Email</label>
+          <input type="email" name="email" required style="width:100%;padding:0.6rem;border-radius:6px;border:1px solid rgba(255,255,255,0.06);background:#0b0b0b;color:#fff" />
+
+          <label style="display:block;margin-top:0.8rem;color:#ddd">Message</label>
+          <textarea name="message" rows="6" required style="width:100%;padding:0.6rem;border-radius:6px;border:1px solid rgba(255,255,255,0.06);background:#0b0b0b;color:#fff"></textarea>
+
+          <div style="margin-top:1rem;">
+            <button type="submit" style="background:var(--reddish-brown);color:#fff;padding:0.6rem 1rem;border-radius:6px;border:none;cursor:pointer">Send</button>
+            <a href="index.html" style="margin-left:1rem;color:#fff;text-decoration:none">Cancel</a>
+          </div>
+        </form>
+      </section>
+
+    </div>
+  </main>
+</body>
+</html>

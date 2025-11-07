@@ -139,6 +139,7 @@ body {
   
   .hero__title {
     font-size: 5rem;
+     Font-family:merriweather sans;
     font-weight: bold;
     text-align: center;
     opacity: 0;
